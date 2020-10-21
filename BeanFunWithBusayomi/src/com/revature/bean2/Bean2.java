@@ -1,7 +1,7 @@
 package com.revature.bean2;
 
 public class Bean2 {
-	String name;
+	public String name;
 	
 	public Bean2() {
 		this.name="V12 WOO";

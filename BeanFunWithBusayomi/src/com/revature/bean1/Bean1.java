@@ -9,8 +9,8 @@ public class Bean1 {
 	String color;
 	Bean2 bean2;
 	
-	
 	public Bean1() {
+		
 	}
 
 
