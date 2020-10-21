@@ -11,7 +11,7 @@ public class Driver {
 		 System.out.println(bean2Name);
 		 
 		 
-		 Bean2 mybean2 = new Bean2("volve");// put value directly to the object
+		 Bean2 mybean2 = new Bean2("volve", "december");// put value directly to the object
 		 Bean1 mybean1 = new Bean1(5678,"sunfire","hunda","pink",mybean2);
 		 String  bean2Name2;
 		 bean2Name2 =mybean1.bean2.name;
@@ -22,7 +22,7 @@ public class Driver {
 		 System.out.println(b1);
 		 System.out.println(b1.toString());
 			
-		 Bean2 ba =new Bean2("volu");
+		 Bean2 ba =new Bean2("volvo", "December");
 		 Bean1 b333 = new Bean1(5678,"jaguar","hunda","pink",ba);
 		 System.out.println(b333.toString());
 
