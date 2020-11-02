@@ -1,0 +1,33 @@
+package com.revature.io;
+
+import com.revature.beans.Person;
+
+public class SerialDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IO io = new IO();
+		String a ="banana";
+	//	io.writeOutputStreamContents("Actually, Lady Gaga is not a " + a);
+		//System.out.println(io.readInputStreamContents());
+		
+		Person p1 = new Person("matt", 34, 275);
+		Person p2 = new Person("chris", 21, 175);
+		Person p3 = new Person("siera", 5, -0);
+		Person p4 = new Person("The Huntress", 28, 160);
+		
+		IOWithCollections.personList.add(p1);
+		IOWithCollections.personList.add(p2);
+		IOWithCollections.personList.add(p3);
+		IOWithCollections.personList.add(p4);
+		
+		//IOWithCollections.writePersonFile();
+
+		IOWithCollections.readPersonFile();
+		
+		System.out.println(IOWithCollections.personList());
+		
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package com.revature.tryclasswork;
+
+
+public class MethodOperationOrder {
+	
+	static int myInt =3;
+	static int myInt2 =3;
+	static Integer myInteger =5;
+	static Integer myInteger2 =5;
+	static Double myDouble = 40.93;
+	
+	public static int overload(int a, int b, int c, int d) {//
+		return a+b+c+d;
+	}
+	public static int overload(int a, int b, int c) {//
+		return a+b+c;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	int result2 =overload(myInt,myInt2, myInteger, myInteger2);//wrapper form W to P
+		int result =overload(myInt, myInteger2, myInt2, myDouble.intValue());//by adding utility int method "conversion"
+		int result1 =overload(myInt, myInteger2, myInt2);
+		System.out.println(result1);
+		System.out.println(result);
+		System.out.println(result2);
+
+		
+		vaTest(10,6,7);
+	
+		
+	}
+	
+	static void  vaTest(int ... v ) {//varargs must be last args, and args can be of anytype
+		System.out.println("Number of args is : " +  v.length  + " contents:");
+		for(int x: v) {
+			System.out.println(x);
+		}
+	}
+	}
+
+

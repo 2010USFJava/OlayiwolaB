@@ -1,0 +1,20 @@
+package com.revature.scan;
+
+import java.util.Scanner;
+
+public class Scan {
+	public static Scanner sc = new Scanner(System.in);
+	
+	public static void printMe() {
+		String contents;
+		System.out.println("what would you like to print");
+		contents=sc.next();
+		System.out.println("contents");
+		System.out.println("what else would you like to print");
+		String moreContents=sc.next();
+		System.out.println("moreContents");
+
+		public static void main(String[] args) {
+			printMe();
+		}
+	}}

@@ -1,0 +1,18 @@
+package com.revature.menu;
+
+import java.util.Scanner;
+
+public class Menu {
+	
+ static Scanner scan = new Scanner(System.in);
+	
+	
+	public static void startMenu() {
+		System.out.println("Welcome to the FARM!");
+		System.out.println("Please enter your choice:");
+		System.out.println("\t[c]reate a new warrrior");
+		System.out.println("\t[f]ight!");
+		System.out.println("\t[q]uit the game");
+		
+		String choice =scan.nextLine(); 
+}}

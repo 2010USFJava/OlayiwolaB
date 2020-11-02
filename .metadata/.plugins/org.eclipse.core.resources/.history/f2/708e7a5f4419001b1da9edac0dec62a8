@@ -1,0 +1,39 @@
+package com.revature.tryclasswork;
+
+public class MethodOperationOrder {
+	
+	static int myInt =3;
+	static int myInt2 =3;
+	static Integer myInteger =5;
+	static Integer myInteger2 =5;
+	static Double myDouble = 45.93;
+	
+	public static int addUp(int a, int b, int c, int d) {
+		return a+b+c+d;
+	}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//	int result =addEmup(myInt, myInteger);
+		//int result =addEmup(myInt, myDouble.intValue());//by adding utility int method
+		
+		//int result=addUp(myInt, myInteger,myInt2, myInteger2);
+		//System.out.println(result);
+		
+		vaTest(2,1,5,7);
+		
+
+	
+		/***String s1="search engines";
+	    String s2="search engine";
+	    String s3 = "engines";
+	    String s4 = "engine";*/
+	}
+	static void  vaTest(int a, int b, int c, int ... v ) {
+		System.out.println("Number of args is : " +  v.length  + " contents:");
+		for(int x: v) {
+			
+			System.out.println(x);
+		}}
+}

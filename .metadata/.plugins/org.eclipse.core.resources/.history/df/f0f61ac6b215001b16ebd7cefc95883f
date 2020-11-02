@@ -1,0 +1,22 @@
+package com.revature.staticsandinstances;
+
+public class Scope {
+	int baby;
+	int doll;
+	 public Scope(int baby,int doll) {
+		 this.baby=baby;
+		 this.doll=doll;
+	 }
+	static {
+		System.out.println("I am static block");
+	}
+	
+	 {
+			System.out.println("I am instance block");
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scope s = new Scope(4,5);
+	}
+
+}

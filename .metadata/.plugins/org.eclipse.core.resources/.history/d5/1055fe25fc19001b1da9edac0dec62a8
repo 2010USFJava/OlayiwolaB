@@ -1,0 +1,14 @@
+package com.revature.exceptions;
+
+public class IncreaseByNegetative extends RuntimeException{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -126184544885282773L;
+	
+	public IncreaseByNegetative() {
+		System.out.println("nice job yomi");
+	}
+
+}

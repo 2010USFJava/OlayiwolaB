@@ -1,0 +1,40 @@
+package com.revature.queuee;
+
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Queuee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Queue<String> myQueue = new LinkedList<>();
+		
+		myQueue.add("Mercury");
+		myQueue.add("Earth");
+		myQueue.add("jupitar");
+		myQueue.add("Venus");
+		myQueue.add("Venus");
+		
+		System.out.println(myQueue);
+		
+		for(String s: myQueue) {
+			System.out.println(s);
+		}
+		
+		System.out.println(myQueue.poll());
+		System.out.println(myQueue.peek());
+		System.out.println(myQueue.poll());
+		System.out.println(myQueue.poll());
+		System.out.println(myQueue.poll());
+		System.out.println(myQueue.poll());		
+		System.out.println(myQueue.poll());
+
+		
+		Queue<String> myDeQueue = new ArrayDeque<>();
+
+
+
+	}
+
+}

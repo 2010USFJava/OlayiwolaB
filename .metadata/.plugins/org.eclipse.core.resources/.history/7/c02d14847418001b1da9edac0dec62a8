@@ -1,0 +1,19 @@
+package com.revature.varargs;
+
+public class FunWithVarArgs {
+
+	/*
+	 * method that will  take in a variable number of argument
+	 * automate and hide the process of creating and saving values into an array
+	 * prior to invoking the method*****/
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		vaTest(10);
+	}
+	static void  vaTest(int ... v ) {
+		System.out.println("Number of args is :" + v.length + "contents:");
+		for(int x: v) {
+			System.out.println(x);
+		}
+	}
+}

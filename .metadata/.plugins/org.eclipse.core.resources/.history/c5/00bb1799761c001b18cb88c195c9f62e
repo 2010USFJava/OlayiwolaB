@@ -1,0 +1,14 @@
+package com.revature.driver;
+
+import com.revature.util.IOFile;
+
+public class Driver {
+	static {
+		IOFile.readCustomerFile();//before we do any operation, run this
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

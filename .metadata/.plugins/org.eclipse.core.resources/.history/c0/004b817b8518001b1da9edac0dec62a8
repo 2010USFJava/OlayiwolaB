@@ -1,0 +1,17 @@
+package com.revature.collectionn;
+
+public class MainDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] arrayString; // declaration
+		
+		arrayString= new String [3];
+		
+		arrayString[0] = "Hi there";
+		
+		System.out.println(arrayString[0]);
+		
+	}
+
+}

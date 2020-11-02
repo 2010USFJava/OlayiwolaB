@@ -1,0 +1,35 @@
+package com.revature.wrapperz;
+
+public class Wrapperz {
+/**
+ * All wraper classes inherit from number class
+ * 
+ * character
+ * Boolean
+ * Integer
+ * Long
+ * Float
+ * Double
+ * 
+ * AUTO BOXING
+ * 
+ * */
+	
+	
+	
+	static int myInt =3;
+	static Integer myInteger =5;
+	static Double myDouble = 45.93;
+	
+	public static int addEmup(int a, int b) {
+		return a+b;
+	}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int result =addEmup(myInt, myInteger);
+		System.out.println(result);
+	}
+
+}

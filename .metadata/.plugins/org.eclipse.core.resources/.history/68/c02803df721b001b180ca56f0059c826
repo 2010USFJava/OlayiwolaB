@@ -1,0 +1,10 @@
+package com.revature.sett;
+
+public class SetsCollection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

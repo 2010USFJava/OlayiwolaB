@@ -1,0 +1,26 @@
+package com.revature.arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Arraylist {
+	/**LIST
+	 * 		List is an interface 
+	 *		 like all interface, it does not have a constructor
+	 *		It can not be instantiated directly, it can be borrowed from child class
+	 *
+	 *		arraylist is dynamic we dont need to plan ahead for the size*/
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	
+		List<String> stringList = new ArrayList<>();//arraylist is dynamic we dont need to plan ahead for the size
+		stringList.add("Hi Lady");
+		stringList.add("The end");
+
+		System.out.println(stringList);
+	}
+
+}

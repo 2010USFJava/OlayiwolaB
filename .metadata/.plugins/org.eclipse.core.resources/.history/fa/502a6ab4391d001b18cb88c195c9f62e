@@ -1,0 +1,76 @@
+package com.revature.menu;
+
+import java.util.Scanner;
+
+public class Menu {
+	
+ static Scanner scan = new Scanner(System.in);
+	
+	
+	public static void startMenu() {
+		System.out.println("Welcome to the Kitchen!");
+		System.out.println("Please enter your choice:");
+		System.out.println("\t[d]o your want create a new Recipe");
+		System.out.println("\t[c]ook!");
+		System.out.println("\t[q]uit");
+		
+		String choice =scan.nextLine(); 
+		
+		switch(choice.toLowerCase()) {
+		case "d":
+			newRecipe();
+			break;
+		case "c":
+			cook();
+			break;
+		case "q":
+			System.out.println("BYE");
+			break;
+		default:
+			System.out.println("Chef Try Again");
+			startMenu();//Return to startmenu if choice not match
+			break;
+	}
+	
+}
+
+
+	private static void cook() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void newRecipe() {
+	
+				System.out.println("Create a new recipe!");
+				System.out.println("Please enter the name your Vegetable");
+				//to take what the user typed in
+				String warriorName=scan.nextLine();
+				System.out.println("Please enter your warrior's HP");
+				int warriorHP =Integer.parseInt(scan.nextLine());
+				System.out.println("Please enter your warrior's attack power");
+				int warriorAttackPower =Integer.parseInt(scan.nextLine());
+				
+				//incase the need to creat warrior back to back
+				System.out.println("would you like to  make a new warrior? (y/n)");
+				
+				//to pick there choice a created another variable for choice
+				String choice=scan.nextLine();
+				
+				//if statement for the option choice
+				if(choice.equalsIgnoreCase("y")) {
+					//it will return back to create menu method
+					createMenu();
+				}else if(choice.equalsIgnoreCase("n")) {
+					//it will return back to start menu method
+					startMenu();
+				}else {
+					//incase choice not matches y/n
+					System.out.println("Too bad, you are going back to main menu");
+					startMenu();
+
+				}
+				}
+	}
+

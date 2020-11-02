@@ -1,0 +1,26 @@
+package com.revature.MultidiamentionArray;
+
+public class MultidiamentionArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arrayInt; 
+
+		int[][][][][] arrayInt1 =new int[3][3][10][3][3];
+		arrayInt1[0][0][0][0][1]=1;
+		
+		// with arrays you have iterate through it manually and print each element
+		
+			for(int[][][][]x: arrayInt1) {
+				for(int[][][] y: x) {
+					for(int[][] z: y) {
+						
+						
+							System.out.println(x);
+						}
+						
+					}}
+	}
+	
+
+}

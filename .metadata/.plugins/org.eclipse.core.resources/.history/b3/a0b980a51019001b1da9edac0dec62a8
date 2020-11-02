@@ -1,0 +1,35 @@
+package com.revature.maps;
+
+import java.security.Key;
+import java.util.HashMap;
+import java.util.Map;
+
+public class DriverMaps {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//MAPS
+		//Is an object that map unique to el
+		
+		
+		/**
+		 * HASHMAP - allows duplicate values not duplicate values
+		 * 			Allows single null key and multiple null values
+		 * 	**/
+		
+		Map<String,String> myMap = new HashMap<>();
+		
+		myMap.put("Apples", "A red thing");
+		myMap.put("Earth", "A blue thing");
+		
+		System.out.println(myMap);
+		System.out.println(myMap.get("Apples"));
+
+		Map<Key,String> specialMap = new HashMap<>();
+		Key myKey = new key("Mercury");
+		
+		specialMap.put(myKey, "My key to Mercury");
+		System.out.println(specialMap.get(myKey));
+	}
+
+}

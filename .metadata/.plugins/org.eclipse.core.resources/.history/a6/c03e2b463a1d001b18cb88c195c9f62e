@@ -1,0 +1,12 @@
+package com.revature.drive;
+
+import com.revature.beans.Vegetable;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vegetable recipe = new Vegetable("Spinach", "Green", "Habenero Pepper", 20);
+	}
+
+}

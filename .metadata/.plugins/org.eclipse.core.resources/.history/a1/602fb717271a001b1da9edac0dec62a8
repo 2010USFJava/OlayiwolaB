@@ -1,0 +1,19 @@
+package com.revature.driver;
+
+import com.revature.beans.Warrior;
+import com.revature.util.FileStuff;
+import com.revature.util.Roster;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//FileStuff.readWarriorFile();
+		Warrior mikey = new Warrior("mikey", 200,4);
+		Warrior steven = new Warrior("steven", 200,4);
+		System.out.println(Roster.warriorList.toString());
+//System.out.println(Roster.warriorList.get(0).toString());
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.revature.tryclasswork;
+
+
+public class MethodOperationOrder {
+	
+	static int myInt =3;
+	static int myInt2 =3;
+	static Integer myInteger =5;
+	static Integer myInteger2 =5;
+	static Double myDouble = 40.93;
+	
+	public static int addUp(int a, int b, int c, int d) {
+		return a+b+c+d;
+	}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//int result =addEmup(myInt,myInt2, myInteger, myInteger2);//wrapper form W to P
+		int result =addUp(myInt, myInteger2, myInt2, myDouble.intValue());//by adding utility int method
+		
+		
+		System.out.println(result);
+		
+		//vaTest(2,1,5,7);
+		
+
+	
+		
+	}
+	
+	
+	}
+
+
